@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Assingnment_Session 7 (facebook_timeline)</string>
+    <string name="user_name">Unblast\n</string>
+    <string name="time_shared">2 hrs</string>
+    <string name="postContent">Buckle up, because change is coming to WordPress</string>
+    <string name="link">http://unblast.com/color-schemes</string>
+    <string name="share_number">Share</string>
+    <string name="like_button">Like</string>
+    <string name="comment_button">Comment</string>
+    <string name="share_button">Share</string>
+</resources>

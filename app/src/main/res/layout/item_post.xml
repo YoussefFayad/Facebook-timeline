@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:id="@+id/item_post"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/user_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/yellow"
+            android:paddingStart="25dp"
+            tools:ignore="ContentDescription,RtlSymmetry" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:paddingStart="5dp"
+                android:text="@string/user_name"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                tools:ignore="RtlSymmetry" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingStart="5dp"
+                tools:ignore="RtlSymmetry,UseCompoundDrawables">
+
+                <TextView
+                    android:id="@+id/time_shared"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/time_shared" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:paddingStart="5dp"
+                    android:src="@drawable/earth"
+                    tools:ignore="ContentDescription" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/menu"
+            android:layout_marginStart="270dp"
+            tools:ignore="ContentDescription" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/postContent"
+        android:textSize="16.5sp"
+        android:textColor="@color/black"
+        android:paddingStart="5dp"
+        tools:ignore="RtlSymmetry" />
+
+    <TextView
+        android:paddingStart="5dp"
+        android:paddingTop="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/link"
+        android:textColor="@color/blue"
+        tools:ignore="RtlSymmetry" />
+
+    <FragmentBreadCrumbs
+        android:id="@+id/imagePostColour"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/yellow" />
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_marginStart="8dp"
+            android:layout_gravity="center"
+            android:layout_width="25dp"
+            android:layout_height="20dp"
+            android:src="@drawable/like"/>
+
+        <TextView
+            android:id="@+id/like_numbers"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/share_numbers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="220dp"
+            android:text="1"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:layout_marginHorizontal="5dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/share_number"
+            android:textSize="18sp"
+            />
+
+        <ImageView
+            android:id="@+id/share_icon"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="5dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@color/yellow"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="15dp"
+            android:layout_height="25dp"
+            android:src="@drawable/down_arrow"
+            tools:ignore="ContentDescription" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginHorizontal="18dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonLike"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/white"
+            android:drawableLeft="@drawable/likebar"
+            android:text="@string/like_button"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/gray"
+            tools:ignore="RtlHardcoded" />
+
+        <Button
+            android:id="@+id/buttonComment"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/white"
+            android:drawableLeft="@drawable/comment"
+            android:text="@string/comment_button"
+            android:textColor="@color/gray"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            tools:ignore="RtlHardcoded" />
+
+        <Button
+            android:id="@+id/buttonShare"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/white"
+            android:drawableLeft="@drawable/share"
+            android:text="@string/share_button"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/gray"
+            tools:ignore="ButtonStyle,RtlHardcoded" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
